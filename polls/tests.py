@@ -17,8 +17,7 @@
         # Cliquem el botó de desar
         self.selenium.find_element(By.NAME, "_save").click()
 
-        # --- 2. CREAR LA SEGONA QUESTION AMB 2 CHOICES ---
-        # Repetim el procés per a la segona Question
+
         self.selenium.get('%s%s' % (self.live_server_url, '/admin/polls/question/add/'))
         
         self.selenium.find_element(By.NAME, "question_text").send_keys("Quin és el teu llenguatge de programació preferit?")
